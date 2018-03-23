@@ -1,0 +1,61 @@
+Filter : Total = 90
+total_90(6) = [
+	{"date":"2011-11-14T17:22:59Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T17:07:21Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:58:03Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:53:41Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:48:46Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:30:43Z","quantity":2,"total":90,"tip":0,"paid":"tab"}
+]
+
+Filter Total : 90 - 100
+total90_100(7) = [
+	{"date":"2011-11-14T16:54:06Z","quantity":1,"total":100,"tip":0,"paid":"cash"},
+	{"date":"2011-11-14T17:22:59Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T17:07:21Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:58:03Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:53:41Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:48:46Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:30:43Z","quantity":2,"total":90,"tip":0,"paid":"tab"}
+]
+
+Filter - Total is a multiple of 3
+total3(7) = [
+	{"date":"2011-11-14T16:28:54Z","quantity":1,"total":300,"tip":200,"paid":"visa"},
+	{"date":"2011-11-14T17:22:59Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T17:07:21Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:58:03Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:53:41Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:48:46Z","quantity":2,"total":90,"tip":0,"paid":"tab"},
+	{"date":"2011-11-14T16:30:43Z","quantity":2,"total":90,"tip":0,"paid":"tab"}
+]
+
+Visa Filter
+visaFilter(1) = [
+	{"date":"2011-11-14T16:28:54Z","quantity":1,"total":300,"tip":200,"paid":"visa"}
+]
+
+Cash Filter - 'paid' as key
+cashFilter(0) = [
+	
+]
+
+Grouped totals - 'paid' as key
+totals(3) = [
+	{"key":"tab","value":540},
+	{"key":"visa","value":300},
+	{"key":"cash","value":0}
+]
+
+Cash Filter - 'type' as key
+cashFilter2(2) = [
+	{"date":"2011-11-14T17:25:45Z","quantity":2,"total":200,"tip":0,"type":"cash"},
+	{"date":"2011-11-14T16:54:06Z","quantity":1,"total":100,"tip":0,"type":"cash"}
+]
+
+Grouped totals - 'type' as key
+totals2(3) = [
+	{"key":"tab","value":920},
+	{"key":"visa","value":500},
+	{"key":"cash","value":300}
+]
